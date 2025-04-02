@@ -41,17 +41,17 @@ public class Main {
        // System.out.println(s1); */
 
         // update the data
-        Transaction transaction = session.beginTransaction();
+       // Transaction transaction = session.beginTransaction();
 
         session.merge(s);
-        transaction.commit(); */
+        transaction.commit();
 
       // Delete Data from table
 
-       Transaction transaction = session.beginTransaction();
-        Student s1 = session.find(Student.class,22);
+      // Transaction transaction = session.beginTransaction();
+       // Student s1 = session.find(Student.class,22);
         session.remove(s1);
-        transaction.commit(); */
+        transaction.commit();
 
         session.close();
         factory.close();
