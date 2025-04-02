@@ -12,11 +12,11 @@ public class Main {
     public static void main(String[] args) {
 
         Student s = new Student();
-     /*    s.setAge(27);
+         s.setAge(27);
         s.setName("Kalyan");
-        s.setTech("Coud "); */
+        s.setTech("Coud "); 
 
-       // System.out.println(s.toString());
+        System.out.println(s.toString());
 
       /*  Configuration config = new Configuration();
         config.addAnnotatedClass(com.demo.Student.class);
@@ -28,27 +28,27 @@ public class Main {
 
         // insert data
 
-     /*   Transaction transaction = session.beginTransaction();
+        Transaction transaction = session.beginTransaction();
         session.persist(s);
-        transaction.commit(); */ // transaction req for save, update and delete
+        transaction.commit(); // transaction req for save, update and delete
 
 
         // Fetch the data
-  /*       Student s1 = session.get(Student.class,26); //Eager Fetching
+         Student s1 = session.get(Student.class,26); //Eager Fetching
         //Student s1 = session.find(Student.class,26); //Eager Fetching
         //Student s1 = session.byId(Student.class).load(26); //Eager Fetching
         //Student s1 = session.byId(Student.class).getReference(26); //lazy fetching
        // System.out.println(s1); */
 
         // update the data
-       /* Transaction transaction = session.beginTransaction();
+        Transaction transaction = session.beginTransaction();
 
         session.merge(s);
         transaction.commit(); */
 
-        // Delete Data from table
+      // Delete Data from table
 
-    /*    Transaction transaction = session.beginTransaction();
+       Transaction transaction = session.beginTransaction();
         Student s1 = session.find(Student.class,22);
         session.remove(s1);
         transaction.commit(); */
